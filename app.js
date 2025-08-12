@@ -8,6 +8,7 @@ function agregarAmigo() {
         amigos.push(nombre); // lo guarda en el arreglo
         console.log(amigos); // muestra la lista en la consola
         nombreUsuario.value = ""; // limpia el campo
+        mostrarAmigos();// Esto genera la lista en el HTML
     } else {
         alert("Escribe un nombre antes de añadir.");
     }
@@ -24,3 +25,17 @@ function mostrarAmigos() {
     }
 }
 
+function mostrarAleatorio() {
+    if (amigos.length === 0) {
+        alert("La lista está vacía. Añade algún amigo primero.");
+        return;
+    }
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    let amigoAleatorio = amigos[indiceAleatorio];
+
+    console.log("Amigo aleatorio:", amigoAleatorio);
+
+    document.getElementById("amigoAleatorio").textContent = "Amigo aleatorio: " + amigoAleatorio;
+}
+
+       
