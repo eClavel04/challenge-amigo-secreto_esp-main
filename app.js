@@ -18,7 +18,7 @@ function agregarAmigo() {
         mostrarAmigos();
     } else {
         //Si campo está vacío, entonces envia este mensaje de alerta en el pop up del navegador
-        alert("Escribe un nombre antes de añadir.");
+        alert("Escribe un nombre antes apretar el botón añadir.");
     }
 }
 //Función que nos permite mostrar la lista de amigos en la pagina web
