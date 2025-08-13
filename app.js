@@ -1,8 +1,8 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-//para crear variable <amigos> donde se guarden los nombres en una [lista, arreglo o array]
+// Para crear variable <amigos> donde se guarden los nombres en una [lista, arreglo o array]
 let amigos = [];  
 let nombreUsuario = document.getElementById("amigo");
-//Función que nos permite agregar amigos a la lista luegro de apretar el botón <añadir> 
+// Función que nos permite agregar amigos a la lista luegro de apretar el botón <añadir> 
 function agregarAmigo() {
     // lee el texto y quita espacios extra
     let nombre = nombreUsuario.value.trim(); 
@@ -17,11 +17,11 @@ function agregarAmigo() {
         // Esto genera la lista en el HTML
         mostrarAmigos();
     } else {
-        //Si campo está vacío, entonces envia este mensaje de alerta en el pop up del navegador
+        // Si campo está vacío, entonces envia este mensaje de alerta en el <pop up> o ventana emergente del navegador
         alert("Escribe un nombre antes apretar el botón añadir.");
     }
 }
-//Función que nos permite mostrar la lista de amigos en la pagina web
+// Función que nos permite mostrar la lista de amigos en la pagina web
 function mostrarAmigos() {
     // Obtiene el elemento con id "listaAmigos" del HTML y lo guarda en la variable "lista"
     let lista = document.getElementById("listaAmigos"); 
@@ -37,11 +37,11 @@ function mostrarAmigos() {
         lista.appendChild(elemento);
     }
 }
-//Función que después de apretar el botón <sorteo amigo>
+// Función que después de apretar el botón <Sortear amigo>
 function sortearAmigo() {
     // Verifica si el arreglo "amigos" está vacío
     if (amigos.length === 0) {
-        //Muestra un mensaje emergente (pop up) si no hay amigos en la lista
+        // Muestra un mensaje emergente (pop up) si no hay amigos en la lista
         alert("La lista está vacía. Añade algún amigo primero.");
         // Sale de la función para que no se siga ejecutando
         return;
